@@ -89,6 +89,11 @@
       background-color: white;
       border-radius: 30px; 
     }
+
+    #message h2:hover {
+      background-color: hsl(300, 69%, 71%);
+      color: #ffffff;
+    }
     
     #contact {
       display: flex;
@@ -115,19 +120,63 @@
     border: 1px solid;
     border-color: #ffffff;
     margin: 0 5px;
-    
+    font-size: 12px;
     }
 
+    .socials p:hover {
+      border-color: hsl(300, 69%, 71%);
+      color:hsl(300, 69%, 71%);
+    }
 
-    hover {
+  /* Desktop */
+  @media only screen and (min-width: 1200px) {
+
+    body {
+      font-size: 1.5em;
+      width: 1440px;
+      height: 900px;
+      margin: 20px;
+    }
+
+    .background-image {
+      background: url("images/bg-desktop.svg");
+      background-size: cover;
+      background-position: center;
+    }
+
+    #logo {
+      width:25%;
+      padding: 20px;
+    }
+
+    #hero {
+      width: 50%; 
+    }
+
+    #hero .content-wrapper {
+      padding-top: 0;
+    }
+
+    #message {
+    }
+
+    #message h1,
+    #message p,
+    #message h2 {
+      text-align: left;
+    }
+
+    #message h2 {
+      padding: 0;
+    }
+
+    #contact {
+      width: 25%;
+      align-items: right;
 
     }
 
-  
-
-
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
+  }
 
   </style>
 
@@ -190,11 +239,5 @@
 
     </section>
 
-  <footer>
-    <p class="attribution">
-      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-      Coded by <a href="#">Lorna-V</a>.
-    </p>
-  </footer>
 </body>
 </html>
